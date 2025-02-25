@@ -1,0 +1,584 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Ubuntu", serif;
+}
+
+/* 
+html {
+    overflow-x: hidden;
+}
+
+body {
+    overflow: hidden;
+} */
+
+/***** Start Header Section *****/
+.main-header {
+    width: 100%;
+    box-shadow: 0px 2px 5px 0px #ccc;
+    position: sticky;
+    background-color: white;
+    top: 0;
+    left: 0;
+    padding: 0px 20px;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo img {
+    width: 60px;
+}
+
+.navbar .menu {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .menu>ul {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .menu>ul>li {
+    padding: 24px 10px;
+}
+
+.navbar .menu>ul>li:nth-child(6)::after {
+    content: "NEW";
+    position: absolute;
+    color: red;
+    top: 22px;
+    font-size: 8px;
+    margin-left: 2px;
+    cursor: pointer;
+}
+
+.navbar .menu>ul>li>a {
+    color: black;
+}
+
+.navbar .search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .search-bar .search-inner {
+    display: flex;
+    align-items: center;
+    background-color: rgb(245, 245, 246);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.navbar .search-bar .search-inner>button {
+    width: 50px;
+    height: 35px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.navbar .search-bar .search-inner>form>input {
+    padding: 8px 5px;
+    border: none;
+    width: 250px;
+    background-color: transparent;
+}
+
+.navbar .search-bar .search-inner>form>input:focus {
+    outline: none;
+}
+
+.navbar .icon {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    position: relative;
+}
+
+.navbar .icon .profile,
+.navbar .icon .wishlists,
+.navbar .icon .bag {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.navbar .icon .profile button,
+.navbar .icon .wishlists button,
+.navbar .icon .bag button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburgar {
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburgar>i {
+    display: flex;
+    align-items: center;
+}
+
+/***** End Header Section *****/
+
+
+/***** Start Sub-Menu Section *****/
+
+/*****! Start Li ke liye sub-menu Section *****/
+.navbar .menu>ul>li>.sub-menu {
+    position: absolute;
+    top: 100%;
+    left: 5%;
+    width: 90%;
+    background-color: white;
+    box-shadow: 2px 2px 5px 0px #ccc, -2px 0px 5px 0px #ccc;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    transform: scaleY(0);
+    -webkit-transform: scaleY(0);
+    -moz-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    -o-transform: scaleY(0);
+    transform-origin: top;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.navbar .menu>ul>li:hover .sub-menu {
+    transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+    -moz-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    -o-transform: scaleY(1);
+}
+
+.navbar .menu>ul>li>.sub-menu>.box-1 {
+    flex-basis: 20%;
+}
+
+.navbar .menu>ul>li>.sub-menu>.box-1 h3 {
+    color: red;
+    font-size: 15px;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+
+.navbar .menu>ul>li>.sub-menu>.box-1>h3:hover {
+    font-size: 16px;
+}
+
+.navbar .menu>ul>li>.sub-menu>.box-1>ul>li {
+    font-size: 11px;
+}
+
+.navbar .menu>ul>li>.sub-menu>.box-1>ul>li:hover {
+    font-size: 13px;
+    color: black;
+}
+
+/*****! End Li ke liye sub-menu Section *****/
+
+/*****! Start Profile ke liye sub-menu Section *****/
+.profile-sub-menu {
+    width: 280px;
+    background-color: white;
+    box-shadow: 2px 2px 5px 0px #ccc, -2px 0px 5px 0px #ccc;
+    position: absolute;
+    top: 100%;
+    left: -60%;
+    padding: 10px;
+    transform: scaleY(0);
+    -webkit-transform: scaleY(0);
+    -moz-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    -o-transform: scaleY(0);
+    transform-origin: top;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.navbar .icon .profile:hover .profile-sub-menu {
+    transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+    -moz-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    -o-transform: scaleY(1);
+}
+
+.profile-sub-menu>h1 {
+    margin-bottom: 5px;
+}
+
+.profile-sub-menu>p {
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.login-sign {
+    width: 130px;
+    border: 1px solid red;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.login-sign>button {
+    color: red;
+    padding: 5px 0px;
+}
+
+.first-ul {
+    margin: 10px 0px;
+}
+
+.first-ul>ul>li {
+    padding: 3px 0px;
+    color: #9b9a9a;
+    font-size: 15px;
+}
+
+.second-ul {
+    margin: 10px 0px;
+}
+
+.second-ul>ul>li {
+    padding: 3px 0px;
+    color: #9b9a9a;
+    font-size: 15px;
+}
+
+.first-ul>ul>li:hover,
+.second-ul>ul>li:hover {
+    color: black;
+    font-size: 16px;
+}
+
+/*****! End Profile ke liye sub-menu Section *****/
+
+/***** End Sub-Menu Section *****/
+
+
+/***** Start Discount Section *****/
+.discount-main {
+    max-width: 1100px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.discount-main>img {
+    width: 100%;
+}
+
+/***** End Discount Section *****/
+
+
+/***** Start Header-Banner-main Section *****/
+.header-banner {
+    display: flex;
+    max-width: 1000px;
+    margin: 0px auto 20px auto;
+}
+
+.header-banner>img {
+    max-width: 50%;
+}
+
+.coupon {
+    max-width: 100%;
+    margin: 0px auto 10px auto;
+}
+
+.coupon>img {
+    max-width: 100%;
+}
+
+.discountcouponImg {
+    display: flex;
+    max-width: 1200px;
+    margin: 0px auto 10px auto;
+}
+
+.discountcouponImg>img {
+    max-width: 50%;
+}
+
+.crazy-deal {
+    max-width: 100%;
+    margin: 0px auto 20px auto;
+}
+
+.crazy-deal>img {
+    max-width: 100%;
+}
+
+.images {
+    display: flex;
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+
+.images img {
+    max-width: 100%;
+}
+
+.shoping {
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+
+.shoping>img {
+    max-width: 100%;
+}
+
+.shoping-card-mid {
+    max-width: 90%;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-img {
+    flex-basis: 15%;
+    margin: 0 0.8%;
+}
+
+.card-img>img {
+    width: 100%;
+}
+
+.offerimg>img {
+    max-width: 100%;
+}
+
+.offerimg {
+    margin-bottom: 20px;
+}
+
+/***** End Header-Banner-main Section *****/
+
+
+/***** Start Footer-Main Section *****/
+.footerMain {
+    background-color: #00000006;
+}
+
+.footer-mid {
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 50px;
+    display: flex;
+    padding-bottom: 50px;
+    gap: 30px;
+    justify-content: center;
+}
+
+.box-1 h2 {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.box-1>ul>li {
+    font-size: 12px;
+    line-height: 20px;
+    color: #9e9d9d;
+    cursor: pointer;
+}
+
+.box-2 h2 {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.box-2>ul>li {
+    font-size: 12px;
+    line-height: 20px;
+    color: #9e9d9d;
+    cursor: pointer;
+}
+
+.box-3 h2 {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.box-3 .play-app-img {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.box-3 .play-app-img>img {
+    max-width: 100px;
+}
+
+.box-3 h3 {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.box-3 .icon-footer {
+    display: flex;
+    gap: 15px;
+}
+
+.box-3 .icon-footer i {
+    color: #9a9898;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.box-4 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.box-4-row-1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.box-4-row-1>img {
+    max-width: 70px;
+}
+
+.box-4-row-1>p {
+    font-size: 15px;
+}
+
+.box-4-row-2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.box-4-row-2>img {
+    max-width: 70px;
+}
+
+.box-4-row-2>p {
+    font-size: 15px;
+}
+
+/***** End Footer-Main Section *****/
+
+
+/***** Start Right-Fixed-Item Section *****/
+.right-fixed-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: fixed;
+    top: 50%;
+    right: 10px;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.notification {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: blue;
+    position: relative;
+}
+
+.whatsapp {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: rgb(96, 223, 96);
+    position: relative;
+}
+
+.facebook {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: blue;
+    position: relative;
+}
+
+.telegram {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: blue;
+    position: relative;
+}
+
+.notification i,
+.whatsapp i,
+.facebook i,
+.telegram i {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+/***** End Right-Fixed-Item Section *****/

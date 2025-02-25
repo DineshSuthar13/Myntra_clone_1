@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My Myntra Clone For Best Practice">
+    <title> Myntra </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!--? ========== Start Header Section ========== -->
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logowebp.webp" alt="Myntra logo">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li> <a href="">MEN</a>
+                        <div class="sub-menu">
+                            <div class="box-1">
+                                <h3>Topwear</h3>
+                                <ul>
+                                    <li>T-Shirts</li>
+                                    <li>Casual Shirts</li>
+                                    <li>Formal Shirts</li>
+                                    <li>Sweatshirts</li>
+                                    <li>Sweaters</li>
+                                    <li>Jackets</li>
+                                    <li>Blazers & Coats</li>
+                                    <li>Suits</li>
+                                    <li>Rain Jackets</li>
+                                </ul>
+                                <h3>Indian & Festive Wear</h3>
+                                <ul>
+                                    <li>Kurtas & Kurta Sets</li>
+                                    <li>Sherwanis</li>
+                                    <li>Nehru Jackets</li>
+                                    <li>Dhotis</li>
+                                </ul>
+                            </div>
+                            <div class="box-1">
+                                <h3>Bottomwear</h3>
+                                <ul>
+                                    <li>Jeans</li>
+                                    <li>Casual Trousers</li>
+                                    <li>Formal Trousers</li>
+                                    <li>Shorts</li>
+                                    <li>Track Pants & Joggers</li>
+                                </ul>
+                                <h3>innerwear & Sleepwear</h3>
+                                <ul>
+                                    <li>Briefs & Trunks</li>
+                                    <li>Boxers</li>
+                                    <li>Vests</li>
+                                    <li>Sleepwear & Loungewear</li>
+                                    <li>Thermals</li>
+                                </ul>
+                                <h3>Plus Size</h3>
+                            </div>
+                            <div class="box-1">
+                                <h3>Footwear</h3>
+                                <ul>
+                                    <li>Casual Shoes</li>
+                                    <li>Sports Shoes</li>
+                                    <li>Formal Shoes</li>
+                                    <li>Sneakers</li>
+                                    <li>Sandals & Floaters</li>
+                                    <li>Flip Flops</li>
+                                    <li>Socks</li>
+                                </ul>
+                                <h3>Personal Care & Grooming</h3>
+                                <h3>Sunglesses & Frames</h3>
+                                <h3>Watches</h3>
+                            </div>
+                            <div class="box-1">
+                                <h3>Sports & Active Wear</h3>
+                                <ul>
+                                    <li>Sports Shoes</li>
+                                    <li>Sports Sandals</li>
+                                    <li>Active T-shirts</li>
+                                    <li>Track Pants & Shorts</li>
+                                    <li>Tracksuits</li>
+                                    <li>Jackets & Sweatshirts</li>
+                                    <li>Sports Accessories</li>
+                                    <li>Swimwear</li>
+                                </ul>
+                                <h3>Gadgets</h3>
+                                <ul>
+                                    <li>Smarts Wea</li>
+                                    <li>Fitness Gadgets</li>
+                                    <li>Headphones</li>
+                                    <li>Speakers</li>
+                                </ul>
+                            </div>
+                            <div class="box-1">
+                                <h3>Fashion Accessories</h3>
+                                <ul>
+                                    <li>Wallets</li>
+                                    <li>Belts</li>
+                                    <li>Perfumes & Body Mists</li>
+                                    <li>Trimmers</li>
+                                    <li>Deodorants</li>
+                                    <li>Ties, Cufflinks & Pocket</li>
+                                    <li>Accessory Gift Sets</li>
+                                    <li>Caps & Hats</li>
+                                    <li>Mufflers, Scarves & Gloves</li>
+                                    <li>Phone Cases</li>
+                                    <li>Rings & Wristwear</li>
+                                    <li>Helments</li>
+                                </ul>
+                                <h3>Bags & Backpacks</h3>
+                                <h3>Luggages & Trolleys</h3>
+                            </div>
+                        </div>
+                    </li>
+                    <li> <a href="">WOMEN</a> </li>
+                    <li> <a href="">KIDS</a> </li>
+                    <li> <a href="">HOME & LIVING</a> </li>
+                    <li> <a href="">BEAUTY</a> </li>
+                    <li> <a href="">STUDIO</a> </li>
+                </ul>
+            </div>
+            <div class="search-bar">
+                <div class="search-inner">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <form action="">
+                        <input type="text" placeholder="Search For Products, Brands and more">
+                    </form>
+                </div>
+            </div>
+            <div class="icon">
+                <div class="profile">
+                    <button><i class="fa-regular fa-user"></i></button>
+                    <p>Profile</p>
+                    <div class="profile-sub-menu">
+                        <h1>Welcome</h1>
+                        <p>To access account and manage orders</p>
+                        <div class="login-sign">
+                            <button>LOGIN</button>/
+                            <button>SIGNUP</button>
+                        </div>
+                        <hr>
+                        <div class="first-ul">
+                            <ul>
+                                <li>Orders</li>
+                                <li>Wishlist</li>
+                                <li>Gift Cards</li>
+                                <li>Contact Us</li>
+                                <li>Myntra Insider</li>
+                            </ul>
+                        </div>
+                        <hr>
+                        <div class="second-ul">
+                            <ul>
+                                <li>Myntra Credit</li>
+                                <li>Coupons</li>
+                                <li>Saved Cards</li>
+                                <li>Saved VPA</li>
+                                <li>Saved Address</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="wishlists">
+                    <button><i class="fa-regular fa-heart"></i></button>
+                    <p>Wishlist</p>
+                </div>
+                <div class="bag">
+                    <button><i class="fa-solid fa-bag-shopping"></i></button>
+                    <p>Bag</p>
+                </div>
+            </div>
+            <div class="hamburgar">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+    <!--? ========== End Header Section ========== -->
+
+
+    <!--? ========== Start Discount Section ========== -->
+    <section class="discount">
+        <div class="discount-main">
+            <img src="images/discountBanner.webp" alt="Discount Banner">
+        </div>
+    </section>
+    <!--? ========== End Discount Section ========== -->
+
+
+    <!--? ========== Start Header-Banner-main Section ========== -->
+    <section class="header-Banner-main">
+        <div class="header-banner">
+            <img src="images/headerBanner1.jpg" alt="headerbanner1">
+            <img src="images/headerBanner2.jpg" alt="headerbanner2">
+        </div>
+        <div class="coupon">
+            <img src="images/couponsImage.webp" alt="couponsImage">
+        </div>
+        <div class="discount-coupon">
+            <div class="discountcouponImg">
+                <img src="images/coupon1.webp" alt="coupon">
+                <img src="images/coupon2.webp" alt="coupon">
+            </div>
+        </div>
+        <div class="crazy-deal">
+            <img src="images/crazyImage.jpg" alt="crazyImage">
+        </div>
+        <div class="images">
+            <div class="img">
+                <img src="images/crazyslider1.jpg" alt="crazyslider1">
+            </div>
+            <div class="img">
+                <img src="images/crazyslider2.jpg" alt="crazyslider2">
+            </div>
+            <div class="img">
+                <img src="images/crazyslider3.jpg" alt="crazyslider3">
+            </div>
+            <div class="img">
+                <img src="images/crazyslider4.jpg" alt="crazyslider4">
+            </div>
+            <div class="img">
+                <img src="images/crazyslider5.jpg" alt="crazyslider5">
+            </div>
+        </div>
+        <div class="shoping">
+            <img src="images/shopping_by_category_header.jpg" alt="shoping">
+        </div>
+        <div class="shoping-card">
+            <div class="shoping-card-mid">
+                <div class="card-img">
+                    <img src="images/shopcategory3.jpg" alt="shopcard">
+                </div>
+                <div class="card-img">
+                    <img src="images/shopcategory4.jpg" alt="shopcard">
+                </div>
+                <div class="card-img">
+                    <img src="images/shopcategory3.jpg" alt="shopcard">
+                </div>
+                <div class="card-img">
+                    <img src="images/shopcategory4.jpg" alt="shopcard">
+                </div>
+                <div class="card-img">
+                    <img src="images/shopcategory3.jpg" alt="shopcard">
+                </div>
+                <div class="card-img">
+                    <img src="images/shopcategory4.jpg" alt="shopcard">
+                </div>
+                <div class="card-img">
+                    <img src="images/shopcategory3.jpg" alt="shopcard">
+                </div>
+                <div class="card-img">
+                    <img src="images/shopcategory4.jpg" alt="shopcard">
+                </div>
+                <div class="card-img">
+                    <img src="images/shopcategory3.jpg" alt="shopcard">
+                </div>
+                <div class="card-img">
+                    <img src="images/shopcategory4.jpg" alt="shopcard">
+                </div>
+                <div class="card-img">
+                    <img src="images/shopcategory3.jpg" alt="shopcard">
+                </div>
+                <div class="card-img">
+                    <img src="images/shopcategory4.jpg" alt="shopcard">
+                </div>
+                <div class="card-img">
+                    <img src="images/shopcategory3.jpg" alt="shopcard">
+                </div>
+                <div class="card-img">
+                    <img src="images/shopcategory4.jpg" alt="shopcard">
+                </div>
+                <div class="card-img">
+                    <img src="images/shopcategory3.jpg" alt="shopcard">
+                </div>
+                <div class="card-img">
+                    <img src="images/shopcategory4.jpg" alt="shopcard">
+                </div>
+                <div class="card-img">
+                    <img src="images/shopcategory3.jpg" alt="shopcard">
+                </div>
+                <div class="card-img">
+                    <img src="images/shopcategory4.jpg" alt="shopcard">
+                </div>
+                <div class="card-img">
+                    <img src="images/shopcategory3.jpg" alt="shopcard">
+                </div>
+                <div class="card-img">
+                    <img src="images/shopcategory4.jpg" alt="shopcard">
+                </div>
+                <div class="card-img">
+                    <img src="images/shopcategory3.jpg" alt="shopcard">
+                </div>
+                <div class="card-img">
+                    <img src="images/shopcategory4.jpg" alt="shopcard">
+                </div>
+                <div class="card-img">
+                    <img src="images/shopcategory3.jpg" alt="shopcard">
+                </div>
+                <div class="card-img">
+                    <img src="images/shopcategory4.jpg" alt="shopcard">
+                </div>
+                <div class="card-img">
+                    <img src="images/shopcategory3.jpg" alt="shopcard">
+                </div>
+                <div class="card-img">
+                    <img src="images/shopcategory4.jpg" alt="shopcard">
+                </div>
+                <div class="card-img">
+                    <img src="images/shopcategory3.jpg" alt="shopcard">
+                </div>
+                <div class="card-img">
+                    <img src="images/shopcategory4.jpg" alt="shopcard">
+                </div>
+                <div class="card-img">
+                    <img src="images/shopcategory3.jpg" alt="shopcard">
+                </div>
+                <div class="card-img">
+                    <img src="images/shopcategory4.jpg" alt="shopcard">
+                </div>
+                <div class="card-img">
+                    <img src="images/shopcategory3.jpg" alt="shopcard">
+                </div>
+                <div class="card-img">
+                    <img src="images/shopcategory4.jpg" alt="shopcard">
+                </div>
+                <div class="card-img">
+                    <img src="images/shopcategory3.jpg" alt="shopcard">
+                </div>
+            </div>
+        </div>
+        <div class="offerimg">
+            <img src="images/offer_image_section.jpg" alt="offerimg">
+        </div>
+    </section>
+    <!--? ========== End Header-Banner-main Section ========== -->
+
+
+    <!--? ========== Start Footer-Main Section ========== -->
+    <footer class="footerMain">
+        <div class="footer-mid">
+            <div class="box box-1">
+                <h2>ONLINE SHOPPING</h2>
+                <ul>
+                    <li>Men</li>
+                    <li>Women</li>
+                    <li>kids</li>
+                    <li>Home & Living</li>
+                    <li>Beauty</li>
+                    <li>Gift Cards</li>
+                    <li>Myntra Insider</li>
+                </ul>
+            </div>
+            <div class="box box-2">
+                <h2>CUSTOMER POLICIES</h2>
+                <ul>
+                    <li>Contact Us</li>
+                    <li>FAQ</li>
+                    <li>T&C</li>
+                    <li>Terms of Use</li>
+                    <li>Track Orders</li>
+                    <li>Shipping</li>
+                    <li>Cancellation</li>
+                    <li>Returns</li>
+                    <li>Privacy Policy</li>
+                    <li>Grievance Officer</li>
+                </ul>
+            </div>
+            <div class="box box-3">
+                <h2>EXPERIENCE MYNTRA APP ON MOBILE</h2>
+                <div class="play-app-img">
+                    <img src="images/google.png" alt="google">
+                    <img src="images/app.png" alt="app">
+                </div>
+                <h3>KEEP IN TOUCH</h3>
+                <div class="icon-footer">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+            <div class="box box-4">
+                <div class="box-4-row-1">
+                    <img src="images/original.png" alt="original">
+                    <p>100% ORIGINAL guarantee for all products at myntra.com</p>
+                </div>
+                <div class="box-4-row-2">
+                    <img src="images/arrow.png" alt="arrow">
+                    <p>
+                        Return within 14days of receiving your order</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--? ========== End Footer-Main Section ========== -->
+
+
+    <!--? ========== Start Right-Fixed-Item Section ========== -->
+    <div class="right-fixed-icon">
+        <div class="notification">
+            <i class="fa-solid fa-bell"></i>
+        </div>
+        <div class="whatsapp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </div>
+        <div class="facebook">
+            <i class="fa-brands fa-facebook"></i>
+        </div>
+        <div class="telegram">
+            <i class="fa-brands fa-telegram"></i>
+        </div>
+    </div>
+    <!--? ========== End Right-Fixed-Item Section ========== -->
+
+</body>
+
+</html>

@@ -1,0 +1,249 @@
+@media only screen and (min-width:900px) and (max-width:1100px) {
+    /*****! Start Header Section *****/
+    /*****! End Header Section *****/
+
+    /*****! Start Header Section *****/
+    .main-header {
+        width: 100%;
+    }
+
+    .navbar {
+        max-width: 100%;
+        margin: 0px 20px;
+        position: relative;
+    }
+
+    .navbar>.search-bar>.search-inner {
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        margin: 10px 0px;
+    }
+
+    .navbar .menu>ul>li:hover .sub-menu {
+        z-index: 99;
+    }
+
+    /*****! End Header Section *****/
+
+
+    /*****! Start Discount Section *****/
+    .discount-main {
+        margin: 55px 20px 0px 20px;
+    }
+
+    /*****! End Discount Section *****/
+
+
+    /*****! Start Footer-Main Section *****/
+    .footer-mid {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer-mid>.box {
+        flex-basis: 25%;
+        margin: 1%;
+    }
+
+    /*****! End Footer-Main Section *****/
+
+}
+
+
+
+
+@media only screen and (min-width:768px) and (max-width:899px) {
+    /*****! Start Header Section *****/
+    /*****! End Header Section *****/
+
+    /*****! Start Header Section *****/
+    .main-header {
+        width: 100%;
+    }
+
+    .navbar {
+        max-width: 100%;
+        margin: 0px 20px;
+        position: relative;
+    }
+
+    .navbar .menu>ul>li {
+        padding: 24px 10px;
+    }
+
+    .navbar .menu>ul>li>a {
+        font-size: 12px;
+    }
+
+    .navbar .icon .profile button,
+    .navbar .icon .wishlists button,
+    .navbar .icon .bag button {
+        font-size: 12px;
+    }
+
+    .navbar>.search-bar>.search-inner {
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        margin: 10px 0px;
+    }
+
+    .navbar .menu>ul>li:hover .sub-menu {
+        z-index: 99;
+    }
+
+    /*****! End Header Section *****/
+
+
+    /*****! Start Discount Section *****/
+    .discount-main {
+        margin: 55px 20px 0px 20px;
+    }
+
+    /*****! End Discount Section *****/
+
+
+    /*****! Start Footer-Main Section *****/
+    .footer-mid {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px 20px;
+    }
+
+    .footer-mid>.box {
+        flex-basis: 25%;
+        margin: 1%;
+        flex-grow: 1;
+    }
+
+    /*****! End Footer-Main Section *****/
+
+}
+
+
+
+
+@media only screen and (min-width:500px) and (max-width:767px) {
+    /*****! Start Header Section *****/
+    /*****! End Header Section *****/
+
+    /*****! Start Header Section *****/
+    .main-header {
+        width: 100%;
+    }
+
+    .navbar {
+        max-width: 100%;
+        margin: 0px 5px;
+        position: relative;
+    }
+
+    .hamburgar {
+        display: block;
+    }
+
+    .navbar .icon,
+    .navbar .menu {
+        display: none;
+    }
+
+
+    /*****! End Header Section *****/
+
+
+    /*****! Start Discount Section *****/
+    .discount-main {
+        margin: 10px 20px;
+    }
+
+    /*****! End Discount Section *****/
+
+
+    /*****! Start Footer-Main Section *****/
+    .footer-mid {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px 20px;
+    }
+
+    .footer-mid>.box {
+        flex-basis: 25%;
+        margin: 1%;
+        flex-grow: 1;
+    }
+
+    /*****! End Footer-Main Section *****/
+
+}
+
+
+
+
+@media only screen and (min-width:200px) and (max-width:499px) {
+    /*****! Start Header Section *****/
+    /*****! End Header Section *****/
+
+    /*****! Start Header Section *****/
+    .main-header {
+        width: 100%;
+    }
+
+    .navbar {
+        max-width: 100%;
+        margin: 0px 5px;
+        position: relative;
+    }
+
+    .hamburgar {
+        display: block;
+    }
+
+    .navbar .icon,
+    .navbar .menu {
+        display: none;
+    }
+
+    .navbar>.search-bar>.search-inner {
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        margin: 10px 0px;
+        overflow: hidden;
+        padding: 0px 5px;
+    }
+
+    /*****! End Header Section *****/
+
+
+    /*****! Start Discount Section *****/
+    .discount-main {
+        margin: 55px 20px 0px 20px;
+    }
+
+    /*****! End Discount Section *****/
+
+
+    /*****! Start Footer-Main Section *****/
+    .footer-mid {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px 20px;
+    }
+
+    .footer-mid>.box {
+        flex-basis: 25%;
+        margin: 1%;
+        flex-grow: 1;
+    }
+
+    .box-3 .play-app-img>img {
+        max-width: 100px;
+    }
+
+    /*****! End Footer-Main Section *****/
+
+}
